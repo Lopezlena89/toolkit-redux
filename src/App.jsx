@@ -11,7 +11,7 @@ function App() {
   const {counter} = useSelector(state=>state.counter);
   const dispatch = useDispatch();
 
-  
+   
 
   return (
     <div className="App">
@@ -32,6 +32,7 @@ function App() {
           Decrement
         </button>
         <button onClick={()=>dispatch(incrementBy(2))}>
+          
           increment by 2
         </button>
         <p>
